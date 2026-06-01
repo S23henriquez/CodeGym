@@ -32,7 +32,7 @@ class RegisterActivity : BaseActivity() {
         binding.btnGoLogin.setOnClickListener { finish() } // Al pulsar, vuelve a Login
     }
 
-    // Intenta registrar un nuevo usuario: valida datos y llama al repositorio.
+    // Intenta registrar un nuevo usuario: valida datos y llama al repositorio
     private fun attemptRegister() {
         val name = binding.etName.text.toString().trim()
         val email = binding.etEmail.text.toString().trim()
@@ -45,10 +45,16 @@ class RegisterActivity : BaseActivity() {
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             binding.etEmail.error = "Email no válido"; return
         }
-        if (password.length < 6) { // Si es muy corta
+        if (password.length < 6) {
             binding.etPassword.error = "Mínimo 6 caracteres"; return
         }
-        if (password != confirm) { // Si no coinciden las contraseñas
+        if (password.none { it in 'A'..'Z' }) {
+            binding.etPassword.error = "Debe tener al menos una mayúscula"; return
+        }
+        if (!password.any { it.isDigit() }) {
+            binding.etPassword.error = "Debe tener al menos un número"; return
+        }
+        if (password != confirm) {
             binding.etConfirmPassword.error = "Las contraseñas no coinciden"; return
         }
 
