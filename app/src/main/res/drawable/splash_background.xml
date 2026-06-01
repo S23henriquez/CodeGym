@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Splash background SIMPLE — solo color de fondo.
+     El logo se muestra dentro del layout activity_splash.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/bg_dark" />
+</shape>

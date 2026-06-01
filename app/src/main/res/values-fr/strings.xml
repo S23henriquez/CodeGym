@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CodeGym</string>
+
+    <string name="nav_home">Accueil</string>
+    <string name="nav_profile">Profil</string>
+    <string name="nav_settings">Paramètres</string>
+    <string name="menu_home">Accueil</string>
+    <string name="menu_profile">Profil</string>
+    <string name="menu_store">Boutique</string>
+    <string name="menu_settings">Paramètres</string>
+
+    <string name="login_button">Se connecter →</string>
+    <string name="no_account">Pas de compte ? S\'inscrire</string>
+    <string name="register_title">Créer un compte</string>
+    <string name="register_button">S\'inscrire →</string>
+    <string name="have_account">Déjà un compte ? Connexion</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="name_hint">Nom</string>
+    <string name="confirm_password_hint">Confirmer le mot de passe</string>
+
+    <string name="hero_keep_learning">Continuons\nd\'apprendre,\n%1$s.</string>
+    <string name="lessons_progress">%1$s · %2$d/%3$d leçons — %4$d%%</string>
+    <string name="select_language_first">Choisir une langue pour commencer</string>
+    <string name="daily_challenge">Défi quotidien</string>
+    <string name="start_lesson">Commencer →</string>
+    <string name="review_lesson">Réviser →</string>
+
+    <string name="theory">// THÉORIE</string>
+    <string name="question">// QUESTION</string>
+    <string name="complete_code">// COMPLÉTER LE CODE</string>
+    <string name="correct">Correct !</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="next_exercise">Suivant →</string>
+    <string name="finish_lesson">Finir la leçon →</string>
+    <string name="game_over">Partie terminée !</string>
+    <string name="no_hearts_message">Vous n\'avez plus de vies. Continuez à pratiquer !</string>
+
+    <string name="profile_title">Mon profil</string>
+    <string name="achievements_unlocked">%1$d / %2$d débloqués</string>
+    <string name="achievement_unlocked_header">// SUCCÈS DÉBLOQUÉ !</string>
+    <string name="level_beginner">Débutant</string>
+    <string name="level_intermediate">Intermédiaire</string>
+    <string name="level_advanced">Avancé</string>
+    <string name="notification_streak_reminder">Ne perds pas ta série ! Pratique un peu</string>
+    <string name="loading_profile">Chargement...</string>
+    <string name="email_placeholder">email@example.com</string>
+    <string name="user_default_name">Utilisateur</string>
+    <string name="error_prefix">Erreur : %1$s</string>
+    <string name="lesson_not_found">Leçon non trouvée</string>
+    <string name="ad_not_available">Publicité non disponible, réessayez</string>
+    <string name="level_test_title">Test de niveau</string>
+    <string name="level_test_step">// étape 2 sur 2</string>
+    <string name="level_test_confirm">Confirmer →</string>
+    <string name="syllabus_route_header">// votre parcours d\'apprentissage</string>
+    <string name="syllabus_title">Votre programme</string>
+    <string name="syllabus_level_detected">🎯 Niveau détecté : %1$s (%2$d/10 correctes)</string>
+    <string name="syllabus_start_learning">Commencer à coder ! →</string>
+    <string name="unit_label">Unité %1$d</string>
+    <string name="ai_badge">✨ IA</string>
+
+    <string name="settings_title">Paramètres</string>
+    <string name="settings_profile">// PROFIL</string>
+    <string name="settings_appearance">// APPARENCE</string>
+    <string name="settings_account">// COMPTE</string>
+    <string name="settings_language">// LANGUE</string>
+    <string name="theme_dark">Thème sombre</string>
+    <string name="theme_dark_desc">Style terminal (recommandé)</string>
+    <string name="theme_light">Thème clair</string>
+    <string name="theme_light_desc">Pour les environnements lumineux</string>
+    <string name="theme_colorblind">Mode daltonien</string>
+    <string name="theme_colorblind_desc">Palette bleue/orange accessible</string>
+
+    <string name="hero_title">Apprenez à\nprogrammer.</string>
+    <string name="challenge_title">Fonctions Récursives</string>
+    <string name="challenge_subtitle">+50 XP · ~8 min</string>
+    <string name="tagline">// apprenez à programmer</string>
+    <string name="logout">🚪 Déconnexion</string>
+    <string name="logout_confirm_title">Déconnexion ?</string>
+    <string name="logout_confirm_msg">Votre progression sera en sécurité sur le cloud.</string>
+    <string name="logout_yes">Oui, sortir</string>
+    <string name="cancel">Annuler</string>
+    <string name="theme_changed">Thème changé. Redémarrez l\'application.</string>
+    <string name="language_changed">Langue mise à jour</string>
+    <string name="language_changed_success">Langue changée avec succès !</string>
+
+    <string name="error_invalid_email">Email invalide</string>
+    <string name="error_short_password">Minimum 6 caractères</string>
+    <string name="error_passwords_dont_match">Les mots de passe ne correspondent pas</string>
+    <string name="error_empty_fields">Remplissez tous les champs</string>
+
+    <string name="error_review_progress">Révision d\'erreur %1$d sur %2$d</string>
+    <string name="error_review_empty_title">Aucune erreur en attente</string>
+    <string name="error_review_empty_message">Vous n\'avez pas de questions ratées à réviser.</string>
+    <string name="error_review_completed_title">Révision terminée !</string>
+    <string name="error_review_completed_message">Vous avez révisé toutes vos erreurs.</string>
+    <string name="back_to_profile">Retour au profil</string>
+
+    <string name="store_title">🛒 Boutique</string>
+    <string name="store_section_premium">// premium — sans publicité</string>
+    <string name="store_section_lives">// vies supplémentaires</string>
+    <string name="store_section_boosters">// boosters</string>
+    <string name="store_section_badges">// badges exclusifs</string>
+    <string name="store_buy">Acheter</string>
+    <string name="store_activate">Activer</string>
+    <string name="store_balance_insufficient">Solde insuffisant</string>
+    <string name="store_purchase_completed">Achat effectué</string>
+    <string name="store_product_double_xp_title">⚡ Double XP — 1 heure</string>
+    <string name="store_product_double_xp_description">Double l\'expérience pendant 1 heure</string>
+    <string name="store_product_streak_shield_title">🛡️ Bouclier de série — 24h</string>
+    <string name="store_product_streak_shield_description">Protège votre série pendant 24h</string>
+    <string name="store_product_lives_3_title">❤️❤️❤️ Pack 3 vies</string>
+    <string name="store_product_lives_3_description">Récupérez 3 vies instantanément</string>
+    <string name="store_product_lives_5_title">❤️❤️❤️❤️❤️ Pack 5 vies</string>
+    <string name="store_product_lives_5_description">Récupérez 5 vies instantanément</string>
+    <string name="store_product_lives_10_title">🔥 Pack 10 vies — OFFRE</string>
+    <string name="store_product_lives_10_description">Récupérez 10 vies avec réduction</string>
+    <string name="store_badge_early_title">⭐ Early Adopter — 100 XP</string>
+    <string name="store_badge_early_description">Badge de premier utilisateur</string>
+    <string name="store_badge_hacker_title">🏴‍☠️ Hacker — 500 XP</string>
+    <string name="store_badge_hacker_description">Pour les plus dédiés</string>
+    <string name="store_badge_legend_title">👑 Légende — 1000 XP</string>
+    <string name="store_badge_legend_description">Le badge le plus exclusif</string>
+    <string name="store_xp_available">⚡ %1$d XP disponibles</string>
+    <string name="store_extra_lives">❤️ Vies supplémentaires : %1$d</string>
+    <string name="store_premium_active_until">✅ Premium actif jusqu\'au %1$s</string>
+    <string name="store_premium_inactive">❌ Sans Premium</string>
+    <string name="store_double_xp_active">⚡ Double XP actif - %1$dh restants</string>
+    <string name="store_double_xp_inactive">⚡ Double XP : inactif</string>
+    <string name="store_streak_shield_active">🛡️ Bouclier actif - %1$dh restants</string>
+    <string name="store_streak_shield_inactive">🛡️ Bouclier de série : inactif</string>
+    <string name="store_badge_hacker_owned">🏴‍☠️ Hacker ✅</string>
+    <string name="store_badge_hacker_price">🏴‍☠️ Hacker - 500 XP</string>
+    <string name="store_badge_early_owned">⭐ Early Adopter ✅</string>
+    <string name="store_badge_early_price">⭐ Early Adopter - 100 XP</string>
+    <string name="store_badge_legend_owned">👑 Légende ✅</string>
+    <string name="store_badge_legend_price">👑 Légende - 1000 XP</string>
+    <string name="premium_1_month_title">💎 Premium 1 mois</string>
+    <string name="premium_1_month_price">2,99€/mois</string>
+    <string name="premium_3_months_title">👑 Premium 3 mois</string>
+    <string name="premium_3_months_price">7,99€ - économisez 1€</string>
+
+    <string name="payment_total_format">Total : %1$s</string>
+    <string name="payment_button_format">Payer %1$s</string>
+    <string name="payment_error_card_invalid">Numéro de carte invalide</string>
+    <string name="payment_error_expiry_invalid">Date invalide</string>
+    <string name="payment_error_cvv_invalid">CVV invalide</string>
+    <string name="payment_error_name_required">Nom du titulaire requis</string>
+
+    <string name="toast_premium_activated">🎉 Premium activé !</string>
+    <string name="toast_need_xp">❌ Vous avez besoin de %1$d XP</string>
+    <string name="toast_lives_bought">✅ +%1$d vies achetées !</string>
+    <string name="toast_booster_activated">✅ Booster activé !</string>
+    <string name="toast_badge_unlocked">✅ Badge débloqué !</string>
+    <string name="toast_error_message">❌ %1$s</string>
+
+    <string name="watch_ad_for_life">📺 Voir publicité → +1 vie</string>
+
+    <string name="lang_python">Python</string>
+    <string name="lang_java">Java</string>
+    <string name="lang_kotlin">Kotlin</string>
+    <string name="lang_cpp">C++</string>
+    <string name="lang_sql">SQL</string>
+    <string name="new_tag">Nouveau</string>
+
+    <string name="welcome_back">Continuons d\'apprendre, %1$s.</string>
+    <string name="btn_start">Commencer →</string>
+
+    <string name="stat_streak">Série</string>
+    <string name="stat_xp">Total XP</string>
+    <string name="stat_lessons">Leçons</string>
+    <string name="achievements_title">Succès</string>
+    <string name="review_errors">Voir les erreurs →</string>
+</resources>

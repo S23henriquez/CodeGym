@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CodeGym</string>
+
+    <string name="nav_home">Inici</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="nav_settings">Ajustos</string>
+    <string name="menu_home">Inici</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_store">Botiga</string>
+    <string name="menu_settings">Ajustos</string>
+
+    <string name="login_button">Inicia sessió →</string>
+    <string name="no_account">No tens compte? Registra\'t</string>
+    <string name="register_title">Crear compte</string>
+    <string name="register_button">Registrar-se →</string>
+    <string name="have_account">Ja tens compte? Inicia sessió</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Contrasenya</string>
+    <string name="name_hint">Nom</string>
+    <string name="confirm_password_hint">Confirmar contrasenya</string>
+
+    <string name="hero_keep_learning">Continuem\naprenent,\n%1$s.</string>
+    <string name="lessons_progress">%1$s · %2$d/%3$d lliçons — %4$d%%</string>
+    <string name="select_language_first">Selecciona un llenguatge per començar</string>
+    <string name="daily_challenge">Repte diari</string>
+    <string name="start_lesson">Començar →</string>
+    <string name="review_lesson">Repassar →</string>
+
+    <string name="theory">// TEORIA</string>
+    <string name="question">// PREGUNTA</string>
+    <string name="complete_code">// COMPLETA EL CODI</string>
+    <string name="correct">Correcte!</string>
+    <string name="incorrect">Incorrecte</string>
+    <string name="next_exercise">Següent →</string>
+    <string name="finish_lesson">Acabar lliçó →</string>
+    <string name="game_over">Fi de la partida!</string>
+    <string name="no_hearts_message">T\'has quedat sense vides. Continua practicant!</string>
+
+    <string name="lesson_perfect">🎉 Lliçó perfecta! +%1$d XP +%2$d XP bonus</string>
+
+    <string name="profile_title">El meu perfil</string>
+    <string name="achievements_unlocked">%1$d / %2$d desbloquejats</string>
+    <string name="achievement_unlocked_header">// LOGRO DESBLOQUEJAT!</string>
+    <string name="level_beginner">Principiant</string>
+    <string name="level_intermediate">Intermedi</string>
+    <string name="level_advanced">Avançat</string>
+    <string name="notification_streak_reminder">No perdis la teva ratxa! Entra a practicar un poc</string>
+    <string name="loading_profile">Carregant...</string>
+    <string name="email_placeholder">email@example.com</string>
+    <string name="user_default_name">Usuari</string>
+    <string name="error_prefix">Error: %1$s</string>
+    <string name="lesson_not_found">Lliçó no trobada</string>
+    <string name="ad_not_available">Anunci no disponible, torna-ho a provar</string>
+    <string name="level_test_title">Test de nivell</string>
+    <string name="level_test_step">// pas 2 de 2</string>
+    <string name="level_test_confirm">Confirmar →</string>
+    <string name="syllabus_route_header">// el teu recorregut d\'aprenentatge</string>
+    <string name="syllabus_title">El teu temari</string>
+    <string name="syllabus_level_detected">🎯 Nivell detectat: %1$s (%2$d/10 correctes)</string>
+    <string name="syllabus_start_learning">Començar a programar! →</string>
+    <string name="unit_label">Unitat %1$d</string>
+    <string name="ai_badge">✨ IA</string>
+
+    <string name="settings_title">Ajustos</string>
+    <string name="settings_profile">// PERFIL</string>
+    <string name="settings_appearance">// APARÈNCIA</string>
+    <string name="settings_account">// COMPTE</string>
+    <string name="settings_language">// IDIOMA</string>
+    <string name="theme_dark">Tema fosc</string>
+    <string name="theme_dark_desc">Estil terminal (recomanat)</string>
+    <string name="theme_light">Tema clar</string>
+    <string name="theme_light_desc">Per a entorns lluminosos</string>
+    <string name="theme_colorblind">Mode daltonisme</string>
+    <string name="theme_colorblind_desc">Paleta accessible blau/taronja</string>
+
+    <string name="hero_title">Aprèn a\nprogramar.</string>
+    <string name="challenge_title">Funcions Recursives</string>
+    <string name="challenge_subtitle">+50 XP · ~8 min</string>
+    <string name="tagline">// aprèn a programar</string>
+    <string name="logout">🚪 Tancar sessió</string>
+    <string name="logout_confirm_title">Tancar sessió?</string>
+    <string name="logout_confirm_msg">El teu progrés estarà segur al núvol quan tornis a entrar.</string>
+    <string name="logout_yes">Sí, sortir</string>
+    <string name="cancel">Cancel·lar</string>
+    <string name="theme_changed">Tema canviat. Reinicia l\'app per veure els canvis.</string>
+    <string name="language_changed">Idioma actualitzat</string>
+    <string name="language_changed_success">Idioma canviat correctament!</string>
+
+    <string name="error_invalid_email">Email no vàlid</string>
+    <string name="error_short_password">Mínim 6 caràcters</string>
+    <string name="error_passwords_dont_match">Les contrasenyes no coincideixen</string>
+    <string name="error_empty_fields">Omple tots els camps</string>
+
+    <string name="error_review_progress">Repàs d\'error %1$d de %2$d</string>
+    <string name="error_review_empty_title">Sense errors pendents</string>
+    <string name="error_review_empty_message">No tens preguntes fallades per repassar ara mateix.</string>
+    <string name="error_review_completed_title">Repàs completat!</string>
+    <string name="error_review_completed_message">Has repassat tots els teus errors guardats.</string>
+    <string name="back_to_profile">Tornar al perfil</string>
+
+    <string name="store_title">🛒 Botiga</string>
+    <string name="store_section_premium">// premium — sense anuncis</string>
+    <string name="store_section_lives">// vides extra</string>
+    <string name="store_section_boosters">// boosters</string>
+    <string name="store_section_badges">// insignies exclusives</string>
+    <string name="store_buy">Comprar</string>
+    <string name="store_activate">Activar</string>
+    <string name="store_balance_insufficient">Saldo insuficient</string>
+    <string name="store_purchase_completed">Compra realitzada</string>
+    <string name="store_product_double_xp_title">⚡ Doble XP — 1 hora</string>
+    <string name="store_product_double_xp_description">Duplica l\'experiència guanyada durant 1 hora</string>
+    <string name="store_product_streak_shield_title">🛡️ Escut de ratxa — 24h</string>
+    <string name="store_product_streak_shield_description">Protegeix la teva ratxa durant 24 hores si falles un dia</string>
+    <string name="store_product_lives_3_title">❤️❤️❤️ Pack 3 vides</string>
+    <string name="store_product_lives_3_description">Recupera 3 vides a l\'instant</string>
+    <string name="store_product_lives_5_title">❤️❤️❤️❤️❤️ Pack 5 vides</string>
+    <string name="store_product_lives_5_description">Recupera 5 vides a l\'instant</string>
+    <string name="store_product_lives_10_title">🔥 Pack 10 vides — OFERTA</string>
+    <string name="store_product_lives_10_description">Recupera 10 vides amb descompte</string>
+    <string name="store_badge_early_title">⭐ Early Adopter — 100 XP</string>
+    <string name="store_badge_early_description">Insignia de primer usuari</string>
+    <string name="store_badge_hacker_title">🏴‍☠️ Hacker — 500 XP</string>
+    <string name="store_badge_hacker_description">Per als més dedicats</string>
+    <string name="store_badge_legend_title">👑 Llegenda — 1000 XP</string>
+    <string name="store_badge_legend_description">La insignia més exclusiva</string>
+    <string name="store_xp_available">⚡ %1$d XP disponibles</string>
+    <string name="store_extra_lives">❤️ Vides extra: %1$d</string>
+    <string name="store_premium_active_until">✅ Premium actiu fins %1$s</string>
+    <string name="store_premium_inactive">❌ Sense Premium</string>
+    <string name="store_double_xp_active">⚡ Doble XP actiu - %1$dh restants</string>
+    <string name="store_double_xp_inactive">⚡ Doble XP: inactiu</string>
+    <string name="store_streak_shield_active">🛡️ Escut actiu - %1$dh restants</string>
+    <string name="store_streak_shield_inactive">🛡️ Escut ratxa: inactiu</string>
+    <string name="store_badge_hacker_owned">🏴‍☠️ Hacker ✅</string>
+    <string name="store_badge_hacker_price">🏴‍☠️ Hacker - 500 XP</string>
+    <string name="store_badge_early_owned">⭐ Early Adopter ✅</string>
+    <string name="store_badge_early_price">⭐ Early Adopter - 100 XP</string>
+    <string name="store_badge_legend_owned">👑 Llegenda ✅</string>
+    <string name="store_badge_legend_price">👑 Llegenda - 1000 XP</string>
+    <string name="premium_1_month_title">💎 Premium 1 mes</string>
+    <string name="premium_1_month_price">2,99€/mes</string>
+    <string name="premium_3_months_title">👑 Premium 3 mesos</string>
+    <string name="premium_3_months_price">7,99€ - estalvia 1€</string>
+
+    <string name="payment_total_format">Total: %1$s</string>
+    <string name="payment_button_format">Pagar %1$s</string>
+    <string name="payment_error_card_invalid">Número de targeta invàlid</string>
+    <string name="payment_error_expiry_invalid">Data invàlida</string>
+    <string name="payment_error_cvv_invalid">CVV invàlid</string>
+    <string name="payment_error_name_required">Introdueix el nom del titular</string>
+
+    <string name="toast_premium_activated">🎉 Premium activat!</string>
+    <string name="toast_need_xp">❌ Necessites %1$d XP</string>
+    <string name="toast_lives_bought">✅ +%1$d vides comprades!</string>
+    <string name="toast_booster_activated">✅ Booster activat!</string>
+    <string name="toast_badge_unlocked">✅ Insignia desbloquejada!</string>
+    <string name="toast_error_message">❌ %1$s</string>
+
+    <string name="watch_ad_for_life">📺 Veure anunci → +1 vida</string>
+
+    <string name="lang_python">Python</string>
+    <string name="lang_java">Java</string>
+    <string name="lang_kotlin">Kotlin</string>
+    <string name="lang_cpp">C++</string>
+    <string name="lang_sql">SQL</string>
+    <string name="new_tag">Nou</string>
+
+    <string name="welcome_back">Continuem aprenent, %1$s.</string>
+    <string name="btn_start">Començar →</string>
+
+    <string name="stat_streak">Ratxa</string>
+    <string name="stat_xp">XP total</string>
+    <string name="stat_lessons">Lliçons</string>
+    <string name="achievements_title">Assoliments</string>
+    <string name="review_errors">Veure errors →</string>
+</resources>

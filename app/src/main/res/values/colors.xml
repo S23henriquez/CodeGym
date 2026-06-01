@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds — TEMA CLARO (default) -->
+    <color name="bg_dark">#FFFFFF</color>
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#F6F8FA</color>
+    <color name="surface2">#EAEEF2</color>
+    <color name="surface_variant">#D1D9E0</color>
+
+    <!-- Acentos rojo (la marca CodeGym — igual en ambos temas) -->
+    <color name="red_primary">#E83A2F</color>
+    <color name="red_dark">#B82820</color>
+    <color name="red_card_bg">#FFE5E5</color>
+    <color name="red_wrong">#FF5555</color>
+    <color name="red_wrong_bg">#FFE5E5</color>
+
+    <!-- Verde para correctos -->
+    <color name="green_correct">#3FB950</color>
+    <color name="green_correct_bg">#E6F4EA</color>
+
+    <!-- Amarillo para badges/XP -->
+    <color name="yellow">#D4A017</color>
+    <color name="yellow_badge_bg">#FFF8E1</color>
+
+    <!-- Texto -->
+    <color name="text_primary">#1F2328</color>
+    <color name="text_secondary">#656D76</color>
+    <color name="text_dim">#888888</color>
+
+    <!-- Bordes -->
+    <color name="border">#D1D9E0</color>
+    <color name="outline">#D1D9E0</color>
+
+    <!-- Compatibilidad -->
+    <color name="primary">#E83A2F</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="secondary">#F2C94C</color>
+    <color name="tertiary">#D2A8FF</color>
+    <color name="success">#3FB950</color>
+    <color name="error">#FF5555</color>
+    <color name="warning">#F2C94C</color>
+
+    <!-- Colores de cada lenguaje -->
+    <color name="lang_python">#3776AB</color>
+    <color name="lang_javascript">#F7DF1E</color>
+    <color name="lang_java">#ED8B00</color>
+    <color name="lang_cpp">#00599C</color>
+    <color name="lang_csharp">#239120</color>
+    <color name="lang_html">#E34F26</color>
+    <color name="lang_sql">#4479A1</color>
+    <color name="lang_kotlin">#7F52FF</color>
+
+    <!-- Util -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

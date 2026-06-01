@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CodeGym</string>
+
+    <string name="nav_home">Inicio</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="nav_settings">Ajustes</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_store">Tienda</string>
+    <string name="menu_settings">Ajustes</string>
+
+    <string name="login_button">Iniciar sesión →</string>
+    <string name="no_account">¿No tienes cuenta? Regístrate</string>
+    <string name="register_title">Crear cuenta</string>
+    <string name="register_button">Registrarse →</string>
+    <string name="have_account">¿Ya tienes cuenta? Inicia sesión</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="name_hint">Nombre</string>
+    <string name="confirm_password_hint">Confirmar contraseña</string>
+
+    <string name="hero_keep_learning">Sigamos\naprendiendo,\n%1$s.</string>
+    <string name="lessons_progress">%1$s · %2$d/%3$d lecciones — %4$d%%</string>
+    <string name="select_language_first">Selecciona un lenguaje para empezar</string>
+    <string name="daily_challenge">Reto diario</string>
+    <string name="start_lesson">Comenzar →</string>
+    <string name="review_lesson">Repasar →</string>
+
+    <string name="theory">// TEORÍA</string>
+    <string name="question">// PREGUNTA</string>
+    <string name="complete_code">// COMPLETA EL CÓDIGO</string>
+    <string name="correct">¡Correcto!</string>
+    <string name="incorrect">Incorrecto</string>
+    <string name="next_exercise">Siguiente →</string>
+    <string name="finish_lesson">Terminar lección →</string>
+    <string name="start_exercises">Empezar ejercicios →</string>
+    <string name="back_to_menu">Volver al menú →</string>
+    <string name="no_hearts">Sin corazones… ¡inténtalo de nuevo!</string>
+    <string name="game_over">¡Game Over!</string>
+    <string name="no_hearts_message">Te has quedado sin vidas. ¡Sigue practicando!</string>
+    <string name="retry">Reintentar</string>
+    <string name="quit">Salir</string>
+    <string name="lesson_completed">🎉 ¡Lección completada!</string>
+    <string name="lesson_perfect">🎉 ¡Lección perfecta!</string>
+    <string name="profile_title">Mi perfil</string>
+    <string name="achievements_unlocked">%1$d / %2$d desbloqueados</string>
+    <string name="achievement_unlocked_header">// ¡LOGRO DESBLOQUEADO!</string>
+    <string name="level_beginner">Principiante</string>
+    <string name="level_intermediate">Intermedio</string>
+    <string name="level_advanced">Avanzado</string>
+    <string name="notification_streak_reminder">¡No pierdas tu racha! Entra a practicar un poco</string>
+    <string name="loading_profile">Cargando...</string>
+    <string name="email_placeholder">email@example.com</string>
+    <string name="user_default_name">Usuario</string>
+    <string name="error_prefix">Error: %1$s</string>
+    <string name="lesson_not_found">Lección no encontrada</string>
+    <string name="ad_not_available">Anuncio no disponible, inténtalo de nuevo</string>
+    <string name="level_test_title">Test de nivel</string>
+    <string name="level_test_step">// paso 2 de 2</string>
+    <string name="level_test_confirm">Confirmar →</string>
+    <string name="syllabus_route_header">// tu ruta de aprendizaje</string>
+    <string name="syllabus_title">Tu temario</string>
+    <string name="syllabus_level_detected">🎯 Nivel detectado: %1$s  (%2$d/10 correctas)</string>
+    <string name="syllabus_start_learning">¡Empezar a programar! →</string>
+    <string name="unit_label">Unidad %1$d</string>
+    <string name="ai_badge">✨ IA</string>
+
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_profile">// PERFIL</string>
+    <string name="settings_appearance">// APARIENCIA</string>
+    <string name="settings_account">// CUENTA</string>
+    <string name="settings_language">// IDIOMA</string>
+    <string name="theme_dark">Tema oscuro</string>
+    <string name="theme_dark_desc">Estilo terminal (recomendado)</string>
+    <string name="theme_light">Tema claro</string>
+    <string name="theme_light_desc">Para entornos luminosos</string>
+    <string name="theme_colorblind">Modo daltonismo</string>
+    <string name="theme_colorblind_desc">Paleta accesible azul/naranja</string>
+
+    <string name="hero_title">Aprende a\nprogramar.</string>
+    <string name="challenge_title">Funciones Recursivas</string>
+    <string name="challenge_subtitle">+50 XP · ~8 min</string>
+    <string name="tagline">// aprende a programar</string>
+    <string name="logout">🚪 Cerrar sesión</string>
+    <string name="logout_confirm_title">¿Cerrar sesión?</string>
+    <string name="logout_confirm_msg">Tu progreso estará seguro en la nube cuando vuelvas a entrar.</string>
+    <string name="logout_yes">Sí, salir</string>
+    <string name="cancel">Cancelar</string>
+    <string name="theme_changed">Tema cambiado. Reinicia la app para ver los cambios.</string>
+    <string name="language_changed">Idioma actualizado</string>
+    <string name="language_changed_success">¡Idioma cambiado correctamente!</string>
+
+    <string name="error_invalid_email">Email no válido</string>
+    <string name="error_short_password">Mínimo 6 caracteres</string>
+    <string name="error_passwords_dont_match">Las contraseñas no coinciden</string>
+    <string name="error_empty_fields">Completa todos los campos</string>
+
+    <string name="error_review_progress">Repaso de error %1$d de %2$d</string>
+    <string name="error_review_empty_title">Sin errores pendientes</string>
+    <string name="error_review_empty_message">No tienes preguntas falladas para repasar ahora mismo.</string>
+    <string name="error_review_completed_title">¡Repaso completado!</string>
+    <string name="error_review_completed_message">Has repasado todos tus errores guardados.</string>
+    <string name="back_to_profile">Volver al perfil</string>
+
+    <string name="store_title">🛒 Tienda</string>
+    <string name="store_section_premium">// premium — sin anuncios</string>
+    <string name="store_section_lives">// vidas extra</string>
+    <string name="store_section_boosters">// boosters</string>
+    <string name="store_section_badges">// insignias exclusivas</string>
+    <string name="store_buy">Comprar</string>
+    <string name="store_activate">Activar</string>
+    <string name="store_balance_insufficient">Saldo insuficiente</string>
+    <string name="store_purchase_completed">Compra realizada</string>
+    <string name="store_product_double_xp_title">⚡ Doble XP — 1 hora</string>
+    <string name="store_product_double_xp_description">Duplica la experiencia ganada durante 1 hora</string>
+    <string name="store_product_streak_shield_title">🛡️ Escudo de racha — 24h</string>
+    <string name="store_product_streak_shield_description">Protege tu racha durante 24 horas si fallas un día</string>
+    <string name="store_product_lives_3_title">❤️❤️❤️ Pack 3 vidas</string>
+    <string name="store_product_lives_3_description">Recupera 3 vidas al instante</string>
+    <string name="store_product_lives_5_title">❤️❤️❤️❤️❤️ Pack 5 vidas</string>
+    <string name="store_product_lives_5_description">Recupera 5 vidas al instante</string>
+    <string name="store_product_lives_10_title">🔥 Pack 10 vidas — OFERTA</string>
+    <string name="store_product_lives_10_description">Recupera 10 vidas con descuento</string>
+    <string name="store_badge_early_title">⭐ Early Adopter — 100 XP</string>
+    <string name="store_badge_early_description">Insignia de primer usuario</string>
+    <string name="store_badge_hacker_title">🏴‍☠️ Hacker — 500 XP</string>
+    <string name="store_badge_hacker_description">Para los más dedicados</string>
+    <string name="store_badge_legend_title">👑 Leyenda — 1000 XP</string>
+    <string name="store_badge_legend_description">La insignia más exclusiva</string>
+    <string name="store_xp_available">⚡ %1$d XP disponibles</string>
+    <string name="store_extra_lives">❤️ Vidas extra: %1$d</string>
+    <string name="store_premium_active_until">✅ Premium activo hasta %1$s</string>
+    <string name="store_premium_inactive">❌ Sin Premium</string>
+    <string name="store_double_xp_active">⚡ Doble XP activo - %1$dh restantes</string>
+    <string name="store_double_xp_inactive">⚡ Doble XP: inactivo</string>
+    <string name="store_streak_shield_active">🛡️ Escudo activo - %1$dh restantes</string>
+    <string name="store_streak_shield_inactive">🛡️ Escudo racha: inactivo</string>
+    <string name="store_badge_hacker_owned">🏴‍☠️ Hacker ✅</string>
+    <string name="store_badge_hacker_price">🏴‍☠️ Hacker - 500 XP</string>
+    <string name="store_badge_early_owned">⭐ Early Adopter ✅</string>
+    <string name="store_badge_early_price">⭐ Early Adopter - 100 XP</string>
+    <string name="store_badge_legend_owned">👑 Leyenda ✅</string>
+    <string name="store_badge_legend_price">👑 Leyenda - 1000 XP</string>
+    <string name="premium_1_month_title">💎 Premium 1 mes</string>
+    <string name="premium_1_month_price">2,99€/mes</string>
+    <string name="premium_3_months_title">👑 Premium 3 meses</string>
+    <string name="premium_3_months_price">7,99€ - ahorra 1€</string>
+
+    <string name="payment_total_format">Total: %1$s</string>
+    <string name="payment_button_format">Pagar %1$s</string>
+    <string name="payment_error_card_invalid">Número de tarjeta inválido</string>
+    <string name="payment_error_expiry_invalid">Fecha inválida</string>
+    <string name="payment_error_cvv_invalid">CVV inválido</string>
+    <string name="payment_error_name_required">Introduce el nombre del titular</string>
+
+    <string name="toast_premium_activated">🎉 ¡Premium activado!</string>
+    <string name="toast_need_xp">❌ Necesitas %1$d XP</string>
+    <string name="toast_lives_bought">✅ +%1$d vidas compradas!</string>
+    <string name="toast_booster_activated">✅ Booster activado!</string>
+    <string name="toast_badge_unlocked">✅ Insignia desbloqueada!</string>
+    <string name="toast_error_message">❌ %1$s</string>
+
+    <string name="watch_ad_for_life">📺 Ver anuncio → +1 vida</string>
+
+    <string name="lang_python">Python</string>
+    <string name="lang_java">Java</string>
+    <string name="lang_kotlin">Kotlin</string>
+    <string name="lang_cpp">C++</string>
+    <string name="lang_sql">SQL</string>
+    <string name="new_tag">Nuevo</string>
+
+    <string name="welcome_back">Sigamos aprendiendo, %1$s.</string>
+    <string name="btn_start">Comenzar →</string>
+
+    <string name="stat_streak">Racha</string>
+    <string name="stat_xp">XP total</string>
+    <string name="stat_lessons">Lecciones</string>
+    <string name="achievements_title">Logros</string>
+    <string name="review_errors">Ver errores →</string>
+</resources>
