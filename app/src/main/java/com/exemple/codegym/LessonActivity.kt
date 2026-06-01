@@ -28,6 +28,8 @@ class LessonActivity : BaseActivity() {
 
         const val EXTRA_LANGUAGE  = "language"
         const val EXTRA_LESSON_ID = "lesson_id"
+
+        //Cantidad de Vidas se usa en la app
         private const val MAX_HEARTS = 3
     }
 
@@ -49,23 +51,25 @@ class LessonActivity : BaseActivity() {
         binding = ActivityLessonBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val language = intent.getStringExtra(EXTRA_LANGUAGE) ?: "Python" // Obtiene el lenguaje
-        val lessonId = intent.getStringExtra(EXTRA_LESSON_ID) ?: "" // Obtiene el ID de la lección
-        val appLang = LocaleHelper.getSavedLanguage(this) // Obtiene el idioma de la app
+        // Obtiene parámetros de la intención y carga la lección
+        val language = intent.getStringExtra(EXTRA_LANGUAGE) ?: "Python"
+        val lessonId = intent.getStringExtra(EXTRA_LESSON_ID) ?: ""
+        val appLang = LocaleHelper.getSavedLanguage(this)
 
-        val foundLesson = LessonRepository.getLessonById(language, lessonId, appLang) // Busca la lección
-        if (foundLesson == null) { // Si no existe
+        val foundLesson = LessonRepository.getLessonById(language, lessonId, appLang)
+        if (foundLesson == null) {
             Toast.makeText(this, getString(R.string.lesson_not_found), Toast.LENGTH_SHORT).show()
             finish()
             return
         }
 
+        // Guarda la lección actual y prepara la lección
         lesson = foundLesson
-        initializeLessonRun() // Prepara la lección (vidas, ejercicios)
-        setupBackButton() // Configura botón atrás
-        MobileAds.initialize(this) // Inicializa Google Mobile Ads
-        loadInterstitialAd() // Carga anuncio intersticial
-        loadRewardedAd() // Carga anuncio con recompensa
+        initializeLessonRun()
+        setupBackButton()
+        MobileAds.initialize(this)
+        loadInterstitialAd()
+        loadRewardedAd()
     }
 
     // Carga un anuncio intersticial que se mostrará antes de los ejercicios.
@@ -74,19 +78,25 @@ class LessonActivity : BaseActivity() {
 
         //Para pausar los anuncios si Jaime llega a ver la app
         //return
-        val adRequest = AdRequest.Builder().build() // Construye solicitud de anuncio
-        InterstitialAd.load( // Carga el anuncio
+
+        // Construye solicitud de anuncio
+        val adRequest = AdRequest.Builder().build()
+        InterstitialAd.load(
             this,
-            "ca-app-pub-3940256099942544/1033173712", // ID del anuncio de prueba
+
+            // ID del anuncio de prueba
+            "ca-app-pub-3940256099942544/1033173712",
             adRequest,
-            object : InterstitialAdLoadCallback() { // Callback para eventos del anuncio
-                override fun onAdLoaded(ad: InterstitialAd) { // Si se cargó exitosamente
+
+            object : InterstitialAdLoadCallback() {
+                override fun onAdLoaded(ad: InterstitialAd) {
+                    // Si se cargó exitosamente
                     interstitialAd = ad
                     // Muestra el anuncio tan pronto se carga
                     showInterstitialAd()
                 }
 
-                override fun onAdFailedToLoad(error: LoadAdError) { // Si falla la carga
+                override fun onAdFailedToLoad(error: LoadAdError) {
                     interstitialAd = null
                     // Si falla, continúa directamente a la teoría
                     showTheory()
@@ -97,18 +107,19 @@ class LessonActivity : BaseActivity() {
 
     // Carga un anuncio con recompensa que otorga vidas adicionales si el usuario lo ve.
     private fun loadRewardedAd() {
-        val adRequest = AdRequest.Builder().build() // Construye solicitud de anuncio
-        com.google.android.gms.ads.rewarded.RewardedAd.load( // Carga el anuncio
+        // Construye solicitud de anuncio
+        val adRequest = AdRequest.Builder().build()
+        com.google.android.gms.ads.rewarded.RewardedAd.load(
             this,
-            "ca-app-pub-3940256099942544/5224354917", // ID del anuncio de prueba
+            "ca-app-pub-3940256099942544/5224354917",
             adRequest,
-            object : RewardedAdLoadCallback() { // Callback para eventos
+            object : RewardedAdLoadCallback() {
 
-                override fun onAdLoaded(ad: RewardedAd) { // Si se cargó exitosamente
+                override fun onAdLoaded(ad: RewardedAd) {
                     rewardedAd = ad
                 }
 
-                override fun onAdFailedToLoad(error: LoadAdError) { // Si falla la carga
+                override fun onAdFailedToLoad(error: LoadAdError) {
                     rewardedAd = null
                 }
             }
@@ -117,28 +128,32 @@ class LessonActivity : BaseActivity() {
 
     // Muestra el anuncio intersticial; si falla, continúa directo a la teoría.
     private fun showInterstitialAd() {
-        val ad = interstitialAd // Obtiene el anuncio cargado
-        if (ad == null) { // Si no hay anuncio disponible
+        val ad = interstitialAd
+        if (ad == null) {
             showTheory()
             return
         }
 
-        ad.fullScreenContentCallback = object : FullScreenContentCallback() { // Configura callbacks
-            override fun onAdDismissedFullScreenContent() { // Cuando el usuario cierra el anuncio
+        ad.fullScreenContentCallback = object : FullScreenContentCallback() {
+            override fun onAdDismissedFullScreenContent() {
                 interstitialAd = null
                 showTheory()
             }
 
-            override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) { // Si falla en mostrar
+            override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
                 interstitialAd = null
                 showTheory()
             }
         }
 
-        ad.show(this) // Muestra el anuncio
+
+        // Muestra el anuncio
+        ad.show(this)
     }
 
-    // ─── LECCIÓN ─────────────────────────────────────────
+   //------------------LECIONES----------------
+
+
     // Inicializa una nueva ronda de lección: reinicia vidas, mezcla ejercicios.
     private fun initializeLessonRun() {
         heartsLeft = MAX_HEARTS // Reinicia vidas
@@ -165,26 +180,34 @@ class LessonActivity : BaseActivity() {
             ${lesson.codeExample}
          """.trimIndent()
 
-        listOf(binding.optionA, binding.optionB, binding.optionC, binding.optionD) // Oculta todas las opciones
+
+        // Oculta todas las opciones
+        listOf(binding.optionA, binding.optionB, binding.optionC, binding.optionD)
             .forEach { it.visibility = View.GONE }
 
-        binding.resultBanner.visibility = View.GONE // Oculta banner de resultado
-        binding.btnContinue.visibility = View.VISIBLE // Muestra botón "Continuar"
+        // Oculta banner de resultado
+        binding.resultBanner.visibility = View.GONE
+
+        // Muestra botón "Continuar" para empezar ejercicios
+        binding.btnContinue.visibility = View.VISIBLE
         binding.btnContinue.text = getString(R.string.start_exercises)
-        binding.btnContinue.setOnClickListener { showNextExercise() } // Al pulsar, muestra primer ejercicio
+        // Al pulsar, muestra primer ejercicio
+        binding.btnContinue.setOnClickListener { showNextExercise() }
     }
 
     // Avanza al siguiente ejercicio; si no hay más, finaliza la lección como exitosa.
     private fun showNextExercise() {
-        currentExerciseIndex++ // Incrementa índice
+        currentExerciseIndex++
 
-        if (currentExerciseIndex >= activeExercises.size) { // Si se acabaron los ejercicios
-            finishLesson(success = true) // Finaliza exitosamente
+        if (currentExerciseIndex >= activeExercises.size) {
+            finishLesson(success = true)
             return
         }
 
-        val ex = activeExercises[currentExerciseIndex] // Obtiene el ejercicio actual
-        alreadyAnswered = false // Permite responder
+        // Obtiene el ejercicio actual
+        val ex = activeExercises[currentExerciseIndex]
+        // Permite responder
+        alreadyAnswered = false
 
         binding.tvQuestionType.text = if (ex.type == com.exemple.codegym.models.ExerciseType.FILL_BLANK) // Tipo de ejercicio
             getString(R.string.complete_code)
