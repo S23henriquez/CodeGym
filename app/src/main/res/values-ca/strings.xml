@@ -35,7 +35,7 @@
     <string name="next_exercise">Següent →</string>
     <string name="finish_lesson">Acabar lliçó →</string>
     <string name="game_over">Fi de la partida!</string>
-    <string name="no_hearts_message">T\'has quedat sense vides. Continua practicant!</string>
+    <string name="no_hearts_message">T\'has quedat sense vides.</string>
 
     <string name="lesson_perfect">🎉 Lliçó perfecta! +%1$d XP +%2$d XP bonus</string>
 

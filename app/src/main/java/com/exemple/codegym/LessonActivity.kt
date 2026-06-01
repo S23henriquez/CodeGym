@@ -235,15 +235,16 @@ class LessonActivity : BaseActivity() {
         val texts = listOf(binding.tvOptionTextA, binding.tvOptionTextB, binding.tvOptionTextC, binding.tvOptionTextD) // Textos de opciones
         val labels = listOf("A", "B", "C", "D")
 
-        cards.forEachIndexed { i, card -> // Itera sobre cada tarjeta
-            if (i < ex.options.size) { // Si hay opción para este índice
-                card.visibility = View.VISIBLE // Muestra la tarjeta
-                letters[i].text = labels[i] // Asigna letra
-                texts[i].text = ex.options[i] // Asigna texto
-                card.setCardBackgroundColor(ContextCompat.getColor(this, R.color.surface2)) // Color por defecto
+        cards.forEachIndexed { i, card ->
+            // Para cada tarjeta de opción mostrar tarjeta letra y asignara el texto
+            if (i < ex.options.size) {
+                card.visibility = View.VISIBLE
+                letters[i].text = labels[i]
+                texts[i].text = ex.options[i]
+                card.setCardBackgroundColor(ContextCompat.getColor(this, R.color.surface2))
                 card.strokeColor = ContextCompat.getColor(this, R.color.border)
                 card.strokeWidth = 2
-                card.setOnClickListener { onOptionSelected(i, ex) } // Listener al pulsar
+                card.setOnClickListener { onOptionSelected(i, ex) }
             } else {
                 card.visibility = View.GONE // Oculta si no hay opción
             }
@@ -251,23 +252,28 @@ class LessonActivity : BaseActivity() {
     }
 
     // Procesa la selección de una opción: verifica si es correcta y actualiza el estado.
+    // Evita responder dos veces y maneja vidas, ejercicios adicionales y resaltado de respuestas.
     private fun onOptionSelected(index: Int, ex: LessonExercise) {
-        if (alreadyAnswered) return // Evita responder dos veces
+        if (alreadyAnswered) return
         alreadyAnswered = true
 
-        val isCorrect = index == ex.correctIndex // Comprueba si es correcta
+        // Comprueba si es correcta la opción seleccionada
+        val isCorrect = index == ex.correctIndex
 
-        if (!isCorrect) { // Si es incorrecta
-            heartsLeft-- // Pierde una vida
+        // Si es incorrecta, pierde una vida y añade un ejercicio extra para compensar el fallo, si hay más disponibles.
+        if (!isCorrect) {
+            heartsLeft--
             updateHearts()
 
-            val newExtraExercise = lesson.exercises.shuffled().firstOrNull { it != ex } ?: ex // Añade ejercicio extra
+            // Añade ejercicio extra para compensar el fallo, si hay más ejercicios disponibles
+            val newExtraExercise = lesson.exercises.shuffled().firstOrNull { it != ex } ?: ex
             activeExercises.add(newExtraExercise)
             totalExercisesThisRun++
 
-            highlightOption(index, correct = false) // Resalta rojo la respuesta incorrecta
-            highlightOption(ex.correctIndex, correct = true) // Resalta verde la correcta
-        } else { // Si es correcta
+            // Resalta rojo la respuesta incorrecta y verde la correcta
+            highlightOption(index, correct = false)
+            highlightOption(ex.correctIndex, correct = true)
+        } else {
             highlightOption(index, correct = true) // Resalta verde
         }
 

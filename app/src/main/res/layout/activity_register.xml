@@ -56,7 +56,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="// crea tu cuenta"
+            android:text="Crear Cuenta"
             android:textColor="?attr/colorOnSurfaceVariant"
             android:textSize="12sp"
             android:fontFamily="@font/space_mono"
@@ -82,7 +82,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="// nombre"
                     android:textColor="?attr/colorOnSurfaceVariant"
                     android:textSize="10sp"
                     android:fontFamily="@font/space_mono"
@@ -113,7 +112,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="// email"
                     android:textColor="?attr/colorOnSurfaceVariant"
                     android:textSize="10sp"
                     android:fontFamily="@font/space_mono"
@@ -145,7 +143,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="// contraseña"
                     android:textColor="?attr/colorOnSurfaceVariant"
                     android:textSize="10sp"
                     android:fontFamily="@font/space_mono"
@@ -167,7 +164,7 @@
                         android:id="@+id/etPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="••••••••"
+                        android:hint="Contraseña"
                         android:textColor="?attr/colorOnSurface"
                         android:textColorHint="?attr/colorOnSurfaceVariant"
                         android:inputType="textPassword"
@@ -178,7 +175,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="// confirmar contraseña"
                     android:textColor="?attr/colorOnSurfaceVariant"
                     android:textSize="10sp"
                     android:fontFamily="@font/space_mono"
@@ -200,7 +196,7 @@
                         android:id="@+id/etConfirmPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="••••••••"
+                        android:hint="Confirmar Contraseña"
                         android:textColor="?attr/colorOnSurface"
                         android:textColorHint="?attr/colorOnSurfaceVariant"
                         android:inputType="textPassword"

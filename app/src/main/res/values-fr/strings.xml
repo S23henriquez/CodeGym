@@ -35,7 +35,7 @@
     <string name="next_exercise">Suivant →</string>
     <string name="finish_lesson">Finir la leçon →</string>
     <string name="game_over">Partie terminée !</string>
-    <string name="no_hearts_message">Vous n\'avez plus de vies. Continuez à pratiquer !</string>
+    <string name="no_hearts_message">Vous n\'avez plus de vies.</string>
 
     <string name="profile_title">Mon profil</string>
     <string name="achievements_unlocked">%1$d / %2$d débloqués</string>

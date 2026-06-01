@@ -36,7 +36,7 @@
     <string name="finish_lesson">Terminar lección →</string>
     <string name="start_exercises">Empezar ejercicios →</string>
     <string name="back_to_menu">Volver al menú →</string>
-    <string name="no_hearts">Sin corazones… ¡inténtalo de nuevo!</string>
+    <string name="no_hearts">Sin corazones…</string>
     <string name="game_over">¡Game Over!</string>
     <string name="no_hearts_message">Te has quedado sin vidas. ¡Sigue practicando!</string>
     <string name="retry">Reintentar</string>

@@ -35,7 +35,7 @@
     <string name="next_exercise">Next →</string>
     <string name="finish_lesson">Finish lesson →</string>
     <string name="game_over">Game Over!</string>
-    <string name="no_hearts_message">You ran out of lives. Keep practicing!</string>
+    <string name="no_hearts_message">You ran out of lives.</string>
 
     <string name="profile_title">My profile</string>
     <string name="achievements_unlocked">%1$d / %2$d unlocked</string>

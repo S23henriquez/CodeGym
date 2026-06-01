@@ -59,8 +59,8 @@ class LessonListActivity : BaseActivity() {
             return
         }
 
-        binding.tvEmpty.visibility   = View.GONE // Oculta mensaje vacío
-        binding.rvLessons.visibility = View.VISIBLE // Muestra el RecyclerView
+        binding.tvEmpty.visibility   = View.GONE
+        binding.rvLessons.visibility = View.VISIBLE
 
         // Cargar lecciones completadas del usuario para marcar cuál ya finalizó
         val uid = repo.currentUid() // Obtiene el ID del usuario
@@ -78,11 +78,12 @@ class LessonListActivity : BaseActivity() {
 
     // Configura el adaptador del RecyclerView con las lecciones y callback para abrir cada una.
     private fun renderList(lessons: List<com.exemple.codegym.models.Lesson>, completedIds: Set<String>) {
-        binding.rvLessons.layoutManager = LinearLayoutManager(this) // Disposición vertical
-        binding.rvLessons.adapter = LessonListAdapter(lessons, completedIds) { lesson -> // Callback al seleccionar una lección
-            val intent = Intent(this, LessonActivity::class.java).apply { // Intent para abrir la lección
-                putExtra(LessonActivity.EXTRA_LANGUAGE, lesson.language) // Pasa el lenguaje
-                putExtra(LessonActivity.EXTRA_LESSON_ID, lesson.id) // Pasa el ID de la lección
+        // Disposición vertical
+        binding.rvLessons.layoutManager = LinearLayoutManager(this)
+        binding.rvLessons.adapter = LessonListAdapter(lessons, completedIds) { lesson ->
+            val intent = Intent(this, LessonActivity::class.java).apply {
+                putExtra(LessonActivity.EXTRA_LANGUAGE, lesson.language)
+                putExtra(LessonActivity.EXTRA_LESSON_ID, lesson.id)
             }
             startActivity(intent)
         }

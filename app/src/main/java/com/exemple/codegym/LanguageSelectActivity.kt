@@ -35,9 +35,10 @@ class LanguageSelectActivity : BaseActivity() {
             "SQL"    to binding.cardSql
         )
 
-        setupCards() // Configura listeners para detectar clics en las tarjetas
-        setupButtons() // Configura el botón "Continuar"
-        resetVisuals()  // Establece el estado visual inicial sin nada seleccionado
+        setupCards()
+        // Configura el botón "Continuar" con validación y navegación a la siguiente pantalla
+        setupButtons()
+        resetVisuals()
     }
 
     // Configura listeners en cada tarjeta para marcar un lenguaje como seleccionado.
@@ -69,6 +70,7 @@ class LanguageSelectActivity : BaseActivity() {
         languageCards.forEach { (lang, card) ->
             // Si es la tarjeta seleccionada
             if (lang == selected) {
+
                 // CARD SELECCIONADA: fondo rojo con borde grueso y elevación para destacar
                 card.setCardBackgroundColor(ContextCompat.getColor(this, R.color.red_card_bg))
                 card.strokeColor = ContextCompat.getColor(this, R.color.red_primary)

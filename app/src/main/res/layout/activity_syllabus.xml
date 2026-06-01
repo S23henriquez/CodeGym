@@ -19,7 +19,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/syllabus_route_header"
             android:textColor="?attr/colorPrimary"
             android:textSize="11sp"
             android:fontFamily="@font/space_mono" />

@@ -60,7 +60,6 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 android:letterSpacing="0.15"
-                android:text="@string/settings_profile"
                 android:layout_marginBottom="12dp" />
 
             <com.google.android.material.card.MaterialCardView
@@ -105,7 +104,6 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 android:letterSpacing="0.15"
-                android:text="@string/settings_appearance"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="12dp" />
 
@@ -233,7 +231,6 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 android:letterSpacing="0.15"
-                android:text="@string/settings_language"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="12dp" />
 
@@ -251,7 +248,6 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 android:letterSpacing="0.15"
-                android:text="@string/settings_account"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="12dp" />
 
@@ -285,7 +281,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginStart="12dp"
-                        android:text="@string/logout"
+                        android:text="Cerrar Sesion"
                         android:textColor="?attr/colorPrimary"
                         android:textSize="14sp"
                         android:textStyle="bold" />
