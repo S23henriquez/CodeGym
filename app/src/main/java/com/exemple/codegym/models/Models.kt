@@ -42,11 +42,11 @@ data class UserProfile(
     val unlockedAchievements: List<String> = emptyList(),
     val theme: String = "DARK",
     val extraLives: Int = 0,
-    val isPremium: Boolean = false,          // 🆕 Sin anuncios
-    val premiumUntil: Long = 0L,             // 🆕 Fecha de expiración Premium
-    val doubleXpUntil: Long = 0L,            // 🆕 Booster doble XP
-    val streakShieldUntil: Long = 0L,        // 🆕 Booster protección racha
-    val unlockedBadges: List<String> = emptyList() // 🆕 Insignias compradas
+    val isPremium: Boolean = false,
+    val premiumUntil: Long = 0L,
+    val doubleXpUntil: Long = 0L,
+    val streakShieldUntil: Long = 0L,
+    val unlockedBadges: List<String> = emptyList()
 ) {
     constructor() : this("", "", "", "", UserLevel.PRINCIPIANTE.label, 0, 0, 0, false, 0L, 0L, emptyList(), emptyList(), "DARK", 0, false, 0L, 0L, 0L, emptyList())
 
