@@ -86,7 +86,6 @@
                     android:fontFamily="@font/syne_extrabold" />
             </LinearLayout>
 
-            <!-- PROGRESS SECTION (removed for simplified UI) -->
 
             <!-- SECTION TITLE: LENGUAJES -->
             <TextView
@@ -94,7 +93,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/settings_language"
                 android:textColor="@color/text_dim"
                 android:textSize="10sp"
                 android:letterSpacing="0.15"
@@ -109,7 +107,7 @@
                 android:clipToPadding="false"
                 android:scrollbars="none" />
 
-            <!-- Daily challenge removed to simplify flow; users pick language -> lesson -->
+
 
         </LinearLayout>
     </ScrollView>
